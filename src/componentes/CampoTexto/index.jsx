@@ -1,25 +1,13 @@
 import styles from "./styles.module.css"
 
-const CampoTexto = () => {
+const CampoTexto = (props) => {
     return (
         <form className={styles.form}>
-            <h1>Preencha os dados para criar o card do colaborador.</h1>
-            <div>
-                <label>Nome</label>
-                <input placeholder="Digite seu nome"/>
+             <div>
+                <label>{props.label}</label>
+                <input placeholder={props.placeholder}/>
             </div>
-            <div>
-                <label>Cargo</label>
-                <input placeholder="Digite seu cargo"/>
-            </div>
-            <div>
-                <label>Imagem</label>
-                <input placeholder="Informe o endereço da imagem"/>
-            </div>
-            <div>
-                <label>Time</label>
-
-            </div>
+            
         </form>
     )
 }
