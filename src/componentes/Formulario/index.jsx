@@ -2,7 +2,7 @@ import CampoTexto from "../CampoTexto"
 import styles from "./styles.module.css"
 
 const Formulario = () => {
-    <section>
+    <section className={styles.form}>
         <form>
             <h2>Preencha os dados para criar o card do colaborador.</h2>
             <CampoTexto label="Nome" placeholder="Digite seu nome" />
