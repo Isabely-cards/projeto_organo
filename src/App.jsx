@@ -8,7 +8,6 @@ function App() {
     <>
       <Banner/>
       <Formulario/>
-
       <p>oi</p>
     </>
   )
