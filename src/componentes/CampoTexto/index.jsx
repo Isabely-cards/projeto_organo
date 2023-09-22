@@ -1,11 +1,12 @@
 import styles from "./styles.module.css"
 
-const CampoTexto = (props) => {
+const CampoTexto = () => {
+    const placeholderModificada = `${props.placeholder}...` 
     return (
         <form className={styles.form}>
              <div>
                 <label>{props.label}</label>
-                <input placeholder={props.placeholder}/>
+                <input placeholder={placeholderModificada}/>
             </div>
             
         </form>
