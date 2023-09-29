@@ -5,7 +5,7 @@ function ListaSuspensa (props) {
     return(
     <div className={styles.lista_suspensa}>
         <label>{props.label}</label>
-        <select>
+        <select required={props.required}>
             {props.itens.map(item => <option key={item}>{item}</option>)}
         </select>
     </div>

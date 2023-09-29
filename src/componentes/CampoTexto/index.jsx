@@ -1,15 +1,21 @@
 import styles from "./styles.module.css"
 
-const CampoTexto = () => {
-    const placeholderModificada = `${props.placeholder}...` 
+const CampoTexto = (props) => {
+    const placeholderModificada = `${props.placeholder}...`
+
+    let valor = "isa"
+    const aoDigitado = (e) => {
+        valor = e.target.value
+        console.log(valor)
+    }
+
+
     return (
-        <form className={styles.form}>
-             <div>
-                <label>{props.label}</label>
-                <input placeholder={placeholderModificada}/>
-            </div>
-            
-        </form>
+
+        <div className={styles.form}>
+            <label required={props.obrigatorio} >{props.label}</label>
+            <input value={valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada} />
+        </div>
     )
 }
 
