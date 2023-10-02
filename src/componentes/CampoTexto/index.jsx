@@ -11,8 +11,10 @@ const CampoTexto = (props) => {
     return (
 
         <div className={styles.form}>
-            <label required={props.obrigatorio} >{props.label}</label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada} />
+            <label>
+                {props.label}
+            </label>
+            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada}/>
         </div>
     )
 }

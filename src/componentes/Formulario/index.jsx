@@ -4,7 +4,7 @@ import CampoTexto from "../CampoTexto"
 import ListaSuspensa from "../listaSuspensa"
 import styles from "./styles.module.css"
 
-const Formulario = () => {
+const Formulario = (props) => {
     const times = [
         'Programação',
         'Front-end',
@@ -14,14 +14,21 @@ const Formulario = () => {
         'Mobile',
         'Inovação e Gestão'
     ]
-    const aoSalvar = (e) => {
-        e.preventDefault()
-        console.log("Form foi submetido!", nome, cargo, imagem)
+
+    const aoSalvar = (evento) => {
+        evento.preventDefault()
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
 
     return (
         <section className={styles.form}>
@@ -39,18 +46,20 @@ const Formulario = () => {
                     label="Cargo" 
                     placeholder="Digite seu cargo" 
                     valor={cargo}
-                    aoAlterado={valor => setNome(valor)}
+                    aoAlterado={valor => setCargo(valor)}
                 />
                 <CampoTexto 
                     label="Imagem" 
                     placeholder="Informe o endereço da imagem" 
                     valor={imagem}
-                    aoAlterado={valor => setNome(valor)}
+                    aoAlterado={valor => setImagem(valor)}
                 />
                 <ListaSuspensa 
-                    obrigatorio={true} 
-                    label="Times" 
+                    obrigatorio={true}
+                    label="Time" 
                     itens={times}
+                    valor={time}
+                    aoAlterado={valor => setTime(valor)}
                 />
                 <Button>Criar card</Button>
             </form>
