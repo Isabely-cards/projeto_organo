@@ -8,7 +8,9 @@ function Time (props) {
     return(
             <section className={styles.time} style={corSegundaria}>
             <h3 style={corPrimaria} >{props.nome}</h3>
-            {props.Colaboradores.map(Colaborador => <Colaborador/>)}
+            <div className={styles.colaboradores}> 
+                {props.colaboradores.map(colaborador => <Colaborador nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} />)}
+            </div>
         </section>
     )
 }
