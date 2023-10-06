@@ -1,8 +1,10 @@
+import { FaRegTrashAlt } from "react-icons/fa"
 import styles from "./styles.module.css"
 
 function Colaborador ({nome, imagem, cargo , corDeFundo}) {
     return(
         <div className={styles.colaborador}>
+            <div className={styles.deletar}>{FaRegTrashAlt}</div>
             <div className={styles.cabecalho} style={{ backgroundColor : corDeFundo}}>
                 <img src={imagem} alt={nome} />
             </div>

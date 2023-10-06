@@ -12,59 +12,63 @@ function App() {
     console.log(colaborador)
     setColaboradores([...colaboradores, colaborador])
   }
-  
+
   const times = [
     {
       nome: 'Programação',
-      corPrimaria:'#57c278',
+      corPrimaria: '#57c278',
       corSegundaria: '#D9F7E9'
     },
     {
       nome: 'Front-end',
-      corPrimaria:'#82CFFA',
+      corPrimaria: '#82CFFA',
       corSegundaria: '#E8F8FF'
     },
     {
       nome: 'Data Science',
-      corPrimaria:'#A6D157',
+      corPrimaria: '#A6D157',
       corSegundaria: '#F0F8E2'
     },
     {
       nome: 'Devops',
-      corPrimaria:'#E06B69',
+      corPrimaria: '#E06B69',
       corSegundaria: '#FDE7E8'
     },
     {
       nome: 'UX e Design',
-      corPrimaria:'#DB6EBF',
+      corPrimaria: '#DB6EBF',
       corSegundaria: '#FAE9F5'
     },
     {
       nome: 'Mobile',
-      corPrimaria:'#FFBA05',
+      corPrimaria: '#FFBA05',
       corSegundaria: '#FFF5D9'
     },
     {
       nome: 'Inovação e Gestão',
-      corPrimaria:'#FF8A29',
+      corPrimaria: '#FF8A29',
       corSegundaria: '#FFEEDF'
     }
   ]
+  function deletarColaborador() {
+    console.log('deletado')
+  }
 
   return (
     <div>
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
-    
-      {times.map(time => <Time 
-        key={time.nome} 
-        nome={time.nome} 
-        corPrimaria={time.corPrimaria} 
-        corSegundaria={time.corSegundaria} 
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      
-      />)}
-      <Rodape/>
+      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
+
+      {times.map(time =>
+        <Time
+          key={time.nome}
+          nome={time.nome}
+          corPrimaria={time.corPrimaria}
+          corSegundaria={time.corSegundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+          aoDeletar={deletarColaborador}
+        />)}
+      <Rodape />
 
     </div>
   )
