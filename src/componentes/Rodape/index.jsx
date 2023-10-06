@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Rodape() {
     return (
@@ -7,17 +8,17 @@ function Rodape() {
                 <ul>
                     <li>
                         <a href="facebook.com" target='_blank'>
-                            <img src="" alt="" />
+                            <FaFacebook style={{color: 'white' }}/>
                         </a>
                     </li>
                     <li>
                         <a href="twitter.com" target='_blank'>
-                            <img src="" alt="" />
+                            <FaTwitter style={{color: 'white' }}/>
                         </a>
                     </li>
                     <li>
                         <a href="instagram.com" target='_blank'>
-                            <img src="" alt="" />
+                            <FaInstagram style={{color: 'white' }}/>
                         </a>
                     </li>
                 </ul>
