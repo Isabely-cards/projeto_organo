@@ -3,7 +3,7 @@ import styles from "./styles.module.css"
 function Colaborador ({nome, imagem, cargo , corDeFundo}) {
     return(
         <div className={styles.colaborador}>
-            <div className={styles.cabecalho} style={{backgroundColor : corDeFundo}}>
+            <div className={styles.cabecalho} style={{ backgroundColor : corDeFundo}}>
                 <img src={imagem} alt={nome} />
             </div>
             <div className={styles.rodape}>
