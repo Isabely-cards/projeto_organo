@@ -4,8 +4,8 @@ import styles from "./styles.module.css"
 const CampoTexto = (props) => {
     const placeholderModificada = `${props.placeholder}...`
 
-    const aoDigitado = (e) => {
-        props.aoAlterado(e.target.value)
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value)
     }
 
     return (
