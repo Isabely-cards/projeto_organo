@@ -1,10 +1,19 @@
 .time {
     text-align: center;
     padding: 32px;
+    background-blend-mode: multiply;
+    position: relative;
 }
+
+.input {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
 .time h3 {
     font-size: 32px;
-    border-bottom: 4px solid ;
+    border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
 }

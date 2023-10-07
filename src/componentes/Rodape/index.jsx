@@ -8,7 +8,7 @@ function Rodape() {
                 <ul>
                     <li>
                         <a href="facebook.com" target='_blank'>
-                            <FaFacebook style={{color: 'white' }}/>
+                            <FaFacebook style={{color: 'white'}}/>
                         </a>
                     </li>
                     <li>
