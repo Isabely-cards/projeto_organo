@@ -1,9 +1,9 @@
 import styles from "./styles.module.css"
 
-function Banner() {
+function Banner({enderecoImagem, textoAlternativo}) {
     return( 
         <header className={styles.banner}>
-            <img src="../../../public/imagens/banner.png" alt="O banner principal da página do Organo"/>
+            <img src={enderecoImagem} alt={textoAlternativo}/>
         </header>
     
     )
