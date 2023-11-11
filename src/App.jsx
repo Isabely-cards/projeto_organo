@@ -80,7 +80,8 @@ function App() {
 
   return (
     <div>
-      <Banner />
+      <Banner enderecoImagem='..//public/imagens/banner.png' textoAlternativo='O banner principal da página do Organo'
+      />
       <Formulario
         aoCriarTime={cadastrarTime}
         times={times.map(time => time.nome)}
