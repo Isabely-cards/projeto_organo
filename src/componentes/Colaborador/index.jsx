@@ -1,38 +1,27 @@
-import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from "react-icons/ai"
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
-function Colaborador({ colaborador, corDeFundo, aoDeletar, aoFavoritar }) {
+const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar }) => {
     function favoritar() {
-        aoFavoritar(colaborador.id)
+        aoFavoritar(colaborador.id);
     }
-    const propsFavorito = {
-        size: 25,
-        onClick: favoritar
-    }
-
-    return (
-        <div className={styles.colaborador}>
-
-            <AiFillCloseCircle 
-                size={25} 
-                className={styles.deletar} 
-                onClick={() => aoDeletar(colaborador.id)} 
-            />
-            <div className={styles.cabecalho} style={{ backgroundColor: corDeFundo }}>
-                <img src={colaborador.imagem} alt={colaborador.nome} />
-            </div>
-            <div className={styles.rodape}>
-                <h4>{colaborador.nome}</h4>
-                <h5>{colaborador.cargo}</h5>
-                <div className={styles.favoritar}>
-                    {colaborador.favorito 
-                    ? <AiFillHeart {...propsFavorito} color="red"/> 
-                    : <AiOutlineHeart {...propsFavorito}/>}
-
-                </div>
+    return (<div className={styles.colaborador}>
+        <AiFillCloseCircle size={25} className={styles.deletar} onClick={() => aoDeletar(colaborador.id)} />
+        <div className={styles.cabecalho} style={{ backgroundColor: corDeFundo }}>
+            <img src={colaborador.imagem} alt={colaborador.nome} />
+        </div>
+        <div className="rodape">
+            <h4>{colaborador.nome}</h4>
+            <h5>{colaborador.cargo}</h5>
+            <div className={styles.favorito}>
+                {colaborador.favorito ? 
+                <AiFillHeart color="#ff0000" 
+                size={25} onClick={favoritar} 
+                /> : <AiOutlineHeart 
+                size={25} onClick={favoritar} />}
             </div>
         </div>
-    )
+    </div>)
 }
 
 export default Colaborador
