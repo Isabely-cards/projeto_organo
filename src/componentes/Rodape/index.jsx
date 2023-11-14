@@ -24,7 +24,7 @@ function Rodape() {
                 </ul>
             </section>
             <section>
-                <img src="../../../public/imagens/Logo.png" alt="Logo" />
+                <img src="/imagens/Logo.png" alt="Logo" />
             </section>
             <section>
                 <p>Desenvolvido por Isabely.</p>

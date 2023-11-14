@@ -12,43 +12,36 @@ function App() {
   const [times, setTimes] = useState([
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Programação',
       cor: '#57C278'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Front-end',
       cor: '#82CFFA'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Data Science',
       cor: '#A6D157'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Devops',
       cor: '#E06B69'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'UX e Design',
       cor: '#DB6EBF'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Mobile',
       cor: '#FFBA05'
     },
     {
       id: uuidv4(),
-      favorito: false,
       nome: 'Inovação e Gestão',
       cor: '#FF8A29'
     }
@@ -80,7 +73,7 @@ function App() {
 
   return (
     <div>
-      <Banner enderecoImagem='..//public/imagens/banner.png' textoAlternativo='O banner principal da página do Organo'
+      <Banner enderecoImagem='/imagens/banner.png' textoAlternativo='O banner principal da página do Organo'
       />
       <Formulario
         aoCriarTime={cadastrarTime}
