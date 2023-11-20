@@ -12,8 +12,9 @@ function Time({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar}) {
             <h3 style={{ borderColor: time.cor }} >{time.nome}</h3>
             <div className={styles.colaboradores}>
             {colaboradores.map
-                ((colaborador, indice) => 
-                <Colaborador key={indice} 
+                ((colaborador) => 
+                <Colaborador 
+                key={colaborador.id} 
                 colaborador={colaborador} 
                 corDeFundo={time.cor} 
                 aoDeletar={aoDeletar} 
