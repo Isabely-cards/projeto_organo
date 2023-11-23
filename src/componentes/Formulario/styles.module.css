@@ -13,3 +13,19 @@
     padding: 36px 64px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
+
+@media screen and (max-width: 768px){
+    .form {
+        padding: 20px 50px;
+        margin: 40px 20px; /* Reduz a margem para ocupar menos espaço */
+        flex-direction: column; /* Altera para exibição em coluna */
+        align-items: center; /* Centraliza os formulários */
+    }
+
+    .form form {
+        width: 90%; /* Usa toda a largura disponível */
+        padding: 20px 50px;
+
+        margin-bottom: 20px; /* Adiciona espaço entre os formulários */
+    }
+}

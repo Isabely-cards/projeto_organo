@@ -13,3 +13,16 @@
     padding: 24px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px){
+    .lista_suspensa label{
+        margin-bottom: 5px;
+        font-size:  19px;
+    }
+    .lista_suspensa select{
+        font-size:  18px;
+        padding: 16px;
+
+    }
+
+}

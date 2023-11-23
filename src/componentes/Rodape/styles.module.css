@@ -15,3 +15,14 @@
 .footer ul li:last-child {
     margin-right: 0;
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 40px;
+
+    }
+    .footer ul li{
+        margin-right: 20px;
+    }
+
+}

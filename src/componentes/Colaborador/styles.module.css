@@ -1,6 +1,8 @@
 .colaborador {
     position: relative;
     width: 280px;
+    flex-wrap: wrap;
+    
 }
 
 .deletar {
@@ -46,4 +48,31 @@
 
 .favoritar {
     margin-top: 20px;
+}
+@media screen and (max-width: 768px){
+    .colaborador {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 270px; /* Define um máximo para não esticar demais */
+        margin-bottom: 20px; /* Adiciona um espaço entre os colaboradores */
+        flex-wrap: wrap;
+    }
+
+    .colaborador .rodape {
+        padding-top: 70px; /* Reduz o espaço acima do rodapé */
+        padding-bottom: 20px; /* Reduz o espaço abaixo do rodapé */
+    }
+
+    .colaborador img {
+        width: 110px; /* Reduz o tamanho da imagem do colaborador */
+        bottom: -40px; /* Ajusta a posição da imagem */
+    }
+
+    .colaborador .rodape h4 {
+        font-size: 16px; /* Diminui o tamanho do título */
+        margin-bottom: 6px; /* Reduz o espaço abaixo do título */
+    }
+
+    .colaborador .rodape h5 {
+        font-size: 16px; /* Diminui o tamanho do texto */
+    }
 }
