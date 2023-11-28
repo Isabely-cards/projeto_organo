@@ -23,7 +23,7 @@ function Rodape() {
                     </li>
                 </ul>
             </section>
-            <section>
+            <section className={styles.img}>
                 <img src="/imagens/Logo.png" alt="Logo" />
             </section>
             <section>
