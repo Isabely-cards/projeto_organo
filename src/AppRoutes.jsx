@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Banner from "./componentes/Banner"
 import Rodape from "./componentes/Rodape"
 import Home from "./paginas/Home"
+import "./App.css"
 
 function AppRoutes() {
   return (
