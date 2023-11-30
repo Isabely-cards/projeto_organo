@@ -54,7 +54,7 @@ const Formulario = ({aoCadastrar, times, aoCriarTime}) => {
                 />
                 <ListaSuspensa 
                     obrigatorio={true}
-                    label="Times" 
+                    label="Selecione um time" 
                     itens={times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
