@@ -6,6 +6,7 @@
 
 .lista_suspensa select {
     -webkit-appearance: none;
+    -webkit-user-select: text;
     background-color: #FFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
@@ -24,11 +25,6 @@
     .lista_suspensa select {
         font-size: 18px;
         padding: 16px;
-        background-color: #FFF;
-        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-        border: none;
-        box-sizing: border-box;
-
     }
 }
 
