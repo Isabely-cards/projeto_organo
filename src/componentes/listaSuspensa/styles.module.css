@@ -24,5 +24,17 @@
         padding: 16px;
 
     }
+}
+
+@media only screen and (max-width: 400px){
+    .lista_suspensa label{
+        margin-bottom: 4px;
+        font-size:  15px;
+    }
+    .lista_suspensa select{
+        font-size:  15px;
+        padding: 14px;
+
+    }
 
 }
