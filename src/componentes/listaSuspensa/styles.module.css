@@ -5,7 +5,8 @@
 }
 
 .lista_suspensa select {
-    -webkit-user-select: all;
+    -webkit-appearance: none;
+    -webkit-user-select: auto;
     background-color: #FFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
