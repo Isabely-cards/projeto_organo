@@ -14,25 +14,31 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px){
-    .lista_suspensa label{
+@media only screen and (max-width: 768px) {
+    .lista_suspensa label {
         margin-bottom: 5px;
-        font-size:  19px;
+        font-size: 19px;
     }
-    .lista_suspensa select{
-        font-size:  18px;
+
+    .lista_suspensa select {
+        font-size: 18px;
         padding: 16px;
+        background-color: #FFF;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+        border: none;
+        box-sizing: border-box;
 
     }
 }
 
-@media only screen and (max-width: 400px){
-    .lista_suspensa label{
+@media only screen and (max-width: 400px) {
+    .lista_suspensa label {
         margin-bottom: 4px;
-        font-size:  15px;
+        font-size: 15px;
     }
-    .lista_suspensa select{
-        font-size:  15px;
+
+    .lista_suspensa select {
+        font-size: 15px;
         padding: 14px;
 
     }
