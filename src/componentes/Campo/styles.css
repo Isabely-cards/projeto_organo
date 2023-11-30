@@ -12,9 +12,9 @@
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 0px;
-    width: 100%;
+    width: 95%;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     padding: 24px;
     box-sizing: border-box;
 }
@@ -22,6 +22,15 @@
 .campo-color input {
     height: 40px;
     padding: 5px 24px;
+}
+@media only screen and (max-width: 1100px){
+    .campo input {
+        font-size: 18px; 
+        padding: 16px; 
+    }
+    .campo label {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
